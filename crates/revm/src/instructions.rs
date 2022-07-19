@@ -1,11 +1,11 @@
 #[macro_use]
 mod macros;
-mod arithmetic;
-mod bitwise;
+pub mod arithmetic;
+pub mod bitwise;
 mod control;
 mod host;
 mod host_env;
-mod i256;
+pub mod i256;
 mod memory;
 pub mod opcode;
 mod stack;
