@@ -25,7 +25,7 @@ use revm_precompiles::Precompiles;
 /// * Database+DatabaseCommit allow directly committing changes of transaction. it enabled `transact_commit`
 /// and `inspect_commit`
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct EVM<DB> {
     pub env: Env,
     pub db: Option<DB>,

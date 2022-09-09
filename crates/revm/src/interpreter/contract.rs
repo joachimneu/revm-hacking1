@@ -4,6 +4,7 @@ use primitive_types::{H160, U256};
 
 use crate::instructions::opcode;
 
+#[derive(Debug)]
 pub struct Contract {
     /// Contracts data
     pub input: Bytes,

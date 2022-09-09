@@ -16,6 +16,7 @@ use core::ops::Range;
 pub const STACK_LIMIT: u64 = 1024;
 pub const CALL_STACK_LIMIT: u64 = 1024;
 
+#[derive(Debug)]
 pub struct Interpreter {
     /// Contract information and invoking data
     pub contract: Contract,
@@ -130,6 +131,7 @@ impl Interpreter {
                 }
             }
         }
+        // println!("Interpreter run() done: {:?}", self);
         ret
     }
 
